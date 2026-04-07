@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.dark .card {
+  background: #2c2c2c;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  padding: 10px;
+  flex: 1;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  margin: 10px 0;
+}
+
+.filters button {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+  background: #f4f4f4;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark li {
+  background: #444;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.countdown {
+  font-size: 12px;
+  color: #888;
+}
+
+.music-player {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.controls button {
+  margin: 5px;
+}
