@@ -5,7 +5,7 @@ const list = document.getElementById("taskList");
 const count = document.getElementById("taskCount");
 const searchInput = document.getElementById("searchInput");
 
-// MUSIC
+// ===== MUSIC =====
 const music = document.getElementById("bgMusic");
 const volumeControl = document.getElementById("volume");
 const nowPlaying = document.getElementById("nowPlaying");
@@ -44,10 +44,9 @@ volumeControl.addEventListener("input", () => {
 });
 
 music.addEventListener("ended", nextSong);
-
 loadSong(currentIndex);
 
-// TASK
+// ===== TASK =====
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let filter = "all";
 
@@ -166,7 +165,6 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 
-// Notification + countdown realtime
 setInterval(() => {
   const now = new Date();
 

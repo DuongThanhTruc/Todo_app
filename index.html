@@ -2,22 +2,22 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Todo Scheduler Pro</title>
+  <title>Task Scheduler Pro</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
   <div class="card">
-    <h1>📝 Todo Scheduler Pro</h1>
+    <h1>✨ Task Scheduler</h1>
 
     <div class="input-group">
       <input id="taskInput" placeholder="Nhập công việc..." />
       <input type="datetime-local" id="timeInput" />
-      <button id="addBtn">Thêm</button>
+      <button id="addBtn">+</button>
     </div>
 
-    <input id="searchInput" placeholder="Tìm kiếm..." />
+    <input id="searchInput" placeholder="🔍 Tìm kiếm..." />
 
     <div class="filters">
       <button onclick="setFilter('all')">All</button>
@@ -30,17 +30,17 @@
     <p id="taskCount"></p>
 
     <div class="actions">
-      <button onclick="clearCompleted()">Clear Done</button>
-      <button onclick="toggleDarkMode()">🌙 Dark</button>
+      <button onclick="clearCompleted()">🗑 Clear</button>
+      <button onclick="toggleDarkMode()">🌙</button>
     </div>
 
-    <!-- MUSIC PLAYER -->
+    <!-- MUSIC -->
     <div class="music-player">
       <p id="nowPlaying">🎵 Chưa phát</p>
 
       <div class="controls">
         <button onclick="prevSong()">⏮</button>
-        <button onclick="toggleMusic()">▶️ / ⏸</button>
+        <button onclick="toggleMusic()">▶️</button>
         <button onclick="nextSong()">⏭</button>
       </div>
 
@@ -53,6 +53,5 @@
 </div>
 
 <script src="js/app.js"></script>
-
 </body>
 </html>
